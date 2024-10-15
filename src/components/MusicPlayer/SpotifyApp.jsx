@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style2.css';
-import logo from "./MusicX.jpg"
+import logo from "./musicX.jpg"
 
 const SpotifyApp = () => {
   const [Track, setTrack] = useState([]); 
@@ -52,7 +52,7 @@ const SpotifyApp = () => {
       
       <div className="sidebar">
         <div className="sidebar-header">
-          <div className="sidebar-logo"><img className='rounded' src="https://i.pinimg.com/736x/68/5a/8e/685a8e9809f4b353c409c183acd2cc83.jpg" height={"40px"} alt="" /></div>
+          <div className="sidebar-logo"><img className='rounded' src={logo} height={"40px"} alt="" /></div>
           <span className='text-[#637a5e] h1'> MusicX</span>
         </div>
  
