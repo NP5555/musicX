@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import MusicX from './components/MusicX';
+// import MusicX from './components/MusicX';
+import SpotifyApp from './components/MusicPlayer/SpotifyApp';
 
 
 function App() {
   return (
     <>
-<MusicX/>
+{/* <MusicX/> */}
+<SpotifyApp/>
 
     </>
   );

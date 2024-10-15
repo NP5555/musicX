@@ -9,13 +9,15 @@ const MusicX = () => {
   const getTracks = async () => {
     const data = await fetch(`https://v1.nocodeapi.com/naeemashraf/spotify/klmrutQvXKwspYNP/search?q=${searchQuery}&type=track`);
     const TrackData = await data.json();
+    console.log(TrackData.tracks.items)
     setTrack(TrackData.tracks.items);
+    
   };
 
   return (
     <>
 
-      <div className="bg-dark text-white min-vh-100">
+      <div className="bg-dark text-success min-vh-100">
         <div className="container py-5">
           <h1 className="text-center mb-4">MusicX</h1>
           <div className="input-group mb-3">
