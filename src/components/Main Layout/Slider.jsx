@@ -1,7 +1,7 @@
 import React from "react";
 // import SpotifyApp from "./MusicPlayer/SpotifyApp";
 import MusicX from "./MusicX";
-import logo from "./MusicPlayer/musicX.jpg";
+import logo from "./musicX.jpg";
 
 const Slider = () => {
   return (
@@ -12,9 +12,9 @@ const Slider = () => {
           data-drawer-toggle="logo-sidebar"
           aria-controls="sidebar"
           type="button"
-          class="inline-flex items-center p-2 mt-2 ms-3 text-[#637a5e] text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 mt-2 ms-3 text-[#637a5e] text-sm  rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         >
-          <span class="sr-only">Open sidebar</span>
+          <span class="text-orange-400">Open sidebar</span>
           <svg
             class="w-6 h-6"
             aria-hidden="true"
@@ -36,7 +36,7 @@ const Slider = () => {
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div class="h-full px-3 py-4 overflow-y-auto dark:bg-gray-800">
           <a href="https://flowbite.com/" class="flex items-center ps-2.5 mb-5">
             <img src={logo} class="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
@@ -77,7 +77,7 @@ const Slider = () => {
                   <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
                 </svg>
                 <span class="flex-1 ms-3 text-[#637a5e] whitespace-nowrap">My-Playlist</span>
-                <span class="inline-flex items-center justify-center px-2 ms-3 text-[#637a5e] text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                <span class="inline-flex items-center justify-center px-2 ms-3 text-[#637a5e] text-sm font-medium  bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
                   Pro
                 </span>
               </a>
@@ -97,7 +97,7 @@ const Slider = () => {
                   <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
                 </svg>
                 <span class="flex-1 ms-3 text-[#637a5e] whitespace-nowrap">Streaming</span>
-                <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-[#637a5e] text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-[#637a5e] text-sm font-medium bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
                   3
                 </span>
               </a>
@@ -183,7 +183,7 @@ const Slider = () => {
       </aside>
 
       <div class="p-4 sm:ml-64">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+        <div class="p-4 border-2 border-gray-200 rounded-xl dark:border-gray-700">
           <MusicX />
         </div>
       </div>

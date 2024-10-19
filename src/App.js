@@ -1,14 +1,9 @@
 import './App.css';
-import Slider from './components/Slider';
-
-
+import Layout from './components/Main Layout/Layout';
 function App() {
   return (
     <>
-
- <Slider/>
-
-
+ <Layout/>
     </>
   );
 }
