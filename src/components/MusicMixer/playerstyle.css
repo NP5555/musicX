@@ -1,0 +1,119 @@
+/* Main container */
+.music-mixer {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Mixer Sections */
+  .mixer-sections {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  /* Individual Section Styling */
+  .mixer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .mixer-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Knob container */
+  .knob-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .knob-container span {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+  
+  /* Volume control buttons */
+  .volume-controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+  
+  .volume-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .volume-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Master control */
+  .master-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .master-control h3 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .master-slider {
+    width: 100px;
+    transform: rotate(270deg);
+    -webkit-appearance: none;
+    height: 8px;
+    background: #4b5563;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .master-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3b82f6;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+
+  .round-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #3b82f6; /* Button color */
+    border: none;
+    border-radius: 50%; /* Makes it round */
+    color: white; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+
+  .round-btn:hover {
+    background-color: #2563eb; /* Hover effect */
+  }

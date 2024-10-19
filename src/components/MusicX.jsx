@@ -19,7 +19,7 @@ const MusicX = () => {
 
       <div className="bg-dark text-success min-vh-100">
         <div className="container py-5">
-          <h1 className="text-center mb-4">MusicX</h1>
+          {/* <h1 className="text-center mb-4">MusicX</h1> */}
           <div className="input-group mb-3">
             <input
               type="text"
@@ -28,7 +28,7 @@ const MusicX = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)} 
             />
-            <button className="btn btn-success" onClick={getTracks}>Search Song</button>
+            <button className="btn bg-[#637a5e] text-white" onClick={getTracks}>Search Song</button>
           </div>
           {Track.length > 0 && (
             <div className="row">
