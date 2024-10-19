@@ -8,7 +8,7 @@ const MusicX = () => {
 
   // Function to get mixtape songs on initial render
   const getMixtapeTracks = async () => {
-    const data = await fetch(`https://v1.nocodeapi.com/naeemashraf/spotify/klmrutQvXKwspYNP/search?q=mixtape&type=track`);
+    const data = await fetch(`https://v1.nocodeapi.com/naeemashraf/spotify/klmrutQvXKwspYNP/search?q=remixs&type=track`);
     const TrackData = await data.json();
     setTrack(TrackData.tracks.items);
   };
@@ -49,7 +49,7 @@ const MusicX = () => {
               <div key={element.id} className="col-md-4 col-sm-6 mb-4">
                 <div className="card glossy-card h-100">
                   <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img className="card-img-top" src={element.album.images[0]?.url} alt="Track image" />
+                    <img className="card-img-top" src={element.album.images[0]?.url} alt="Track" />
                     <a href={element.external_urls.spotify} target="_blank" rel="noopener noreferrer">
                       <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                     </a>
