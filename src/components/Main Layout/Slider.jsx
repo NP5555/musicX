@@ -6,7 +6,7 @@ import logo from "./musicX.jpg";
 const Slider = () => {
   return (
     <>
-      <div>
+      <div className="bg-[#1f2937]">
         <button
           data-drawer-target="logo-sidebar"
           data-drawer-toggle="logo-sidebar"
@@ -182,8 +182,8 @@ const Slider = () => {
         </div>
       </aside>
 
-      <div class="p-4 sm:ml-64">
-        <div class="p-4 border-2 border-gray-200 rounded-xl dark:border-gray-700">
+      <div class="p-4 sm:ml-64 bg-[#1f2937]">
+        <div class=" bg-[#1f2937] p-4 border-2 border-gray-200 rounded-xl dark:border-gray-700">
           <MusicX />
         </div>
       </div>

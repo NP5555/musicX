@@ -27,10 +27,10 @@ const MusicX = () => {
   }, []);
 
   return (
-    <div className="bg-dark text-success min-vh-100">
+    <div className="bg-[#1f2937] text-success min-vh-100">
       <div className="container py-5">
         {/* Centered and shortened search bar */}
-        <div className="d-flex justify-content-center mb-4">
+        <div className="d-flex rounded-xl justify-content-center mb-4">
           <div className="input-group" style={{ maxWidth: '500px', width: '100%' }}>
             <input
               type="text"
@@ -39,12 +39,12 @@ const MusicX = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button className="btn bg-[#637a5e] text-white" onClick={getTracks}>Search Song</button>
+            <button className="btn bg-[#637a5e] rounded-xl text-white" onClick={getTracks}>Search</button>
           </div>
         </div>
 
         {Track.length > 0 && (
-          <div className="row">
+          <div className="row bg-[#1f2937]">
             {Track.map((element) => (
               <div key={element.id} className="col-md-4 col-sm-6 mb-4">
                 <div className="card glossy-card h-100">
