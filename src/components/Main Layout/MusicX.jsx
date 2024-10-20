@@ -62,7 +62,7 @@ const MusicX = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <button
-              className="btn bg-[#637a5e] rounded-xl text-white"
+              className="btn bg-[#1f2937] rounded-xl text-white"
               onClick={getTracks}
             >
               Search
@@ -95,7 +95,7 @@ const MusicX = () => {
                       ></div>
                     </a>
                   </div>
-                  <div className="card-body text-center bg-[#637a5e]">
+                  <div className="card-body text-center bg-[#1f2937]">
                     <h5 className="h5 font-weight-bold">
                       <a
                         href={element.external_urls.spotify}
