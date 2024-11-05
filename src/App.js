@@ -1,5 +1,7 @@
-import './App.css';
 import Layout from './components/Main Layout/Layout';
+import "./index.css"
+
+
 function App() {
   return (
     <>

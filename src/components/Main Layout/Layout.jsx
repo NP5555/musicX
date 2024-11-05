@@ -5,7 +5,6 @@ const Layout = () => {
   return (
     <>
     <Slider/>
-    
     </>
   )
 }
